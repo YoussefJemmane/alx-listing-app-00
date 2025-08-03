@@ -44,3 +44,26 @@ export interface PropertyListing {
   };
 }
 
+// Interface for PropertyProps used in components
+export interface PropertyProps {
+  name: string;
+  rating: number;
+  address: {
+    city: string;
+    country: string;
+  };
+  image: string;
+  description: string;
+  category: string[];
+  price: number;
+  reviews?: ReviewProps[];
+}
+
+// Interface for Review
+export interface ReviewProps {
+  name: string;
+  rating: number;
+  comment: string;
+  avatar: string;
+}
+

@@ -1,3 +1,41 @@
+// Sample property listing for testing purposes
+import { PropertyProps } from "../interfaces";
+
+export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
+  {
+    name: "Beachfront Paradise",
+    rating: 4.7,
+    address: {
+      city: "Miami",
+      country: "USA",
+    },
+    image: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YmVhY2hmcm9udCUyMGhvdXNlfGVufDB8fDB8fHww&w=1000&q=80",
+    description: "A beautiful beachfront property with stunning ocean views. Perfect for a relaxing getaway with modern amenities and direct beach access. This property offers an unforgettable experience with its pristine location and luxurious accommodations.",
+    category: ["WiFi", "Free Parking", "Swimming Pool", "Beach Access", "Air Conditioning", "Kitchen"],
+    price: 250,
+    reviews: [
+      {
+        name: "John Doe",
+        rating: 5,
+        comment: "Amazing place, had a great time! The beach access was incredible and the property was exactly as described. Highly recommend!",
+        avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&w=400&q=80",
+      },
+      {
+        name: "Jane Smith",
+        rating: 4,
+        comment: "Beautiful location but a bit pricey. The amenities were great and the host was very responsive. Would stay again!",
+        avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&w=400&q=80",
+      },
+      {
+        name: "Mike Johnson",
+        rating: 5,
+        comment: "Perfect for our family vacation. The kids loved the pool and we enjoyed the sunset views from the deck.",
+        avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&w=400&q=80",
+      },
+    ],
+  },
+];
+
 // API URLs and endpoints
 export const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:3000/api';
 
